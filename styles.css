@@ -4,6 +4,48 @@
   box-sizing: border-box;
 }
 
+/* Custom properties */
+:root {
+  --main-text-color: #6070ff;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.toolbar {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.75rem;
+  padding: 0.6rem 0.75rem;
+}
+
+h1 {
+  color: var(--main-text-color);
+  font-size: 1.1rem;
+  padding: 0 0.75rem;
+}
+
+.menu-btn {
+  padding: 0 0.75rem;
+  background: transparent;
+  border: none;
+}
+
+.menu-btn img {
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.headline {
+  background: url("./images/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Rules for larger screen sizes */
 @media (min-width: 768px) {
 }
