@@ -18,6 +18,8 @@
   --scope-and-year-text-color: #7a869a;
   --label-bg-color: #ebebff;
   --see-project-btn-text-color: #396df2;
+  --section-padding: 7.1rem 1.5rem;
+  --section-border-radius: 4.5rem;
 }
 
 body {
@@ -25,7 +27,8 @@ body {
   background: #f7f7f9;
 }
 
-/* Headline/Header && Toolbar/Nav */
+/* ---Header--- */
+
 .header {
   padding: 2.75rem 0;
   height: 100vh;
@@ -41,9 +44,10 @@ body {
   height: 100%;
   background: var(--white-bg-color);
   z-index: -1;
-  border-bottom-left-radius: 4.5rem;
+  border-bottom-left-radius: var(--section-border-radius);
 }
 
+/* Toolbar/Nav */
 .toolbar {
   height: 3rem;
   display: flex;
@@ -68,12 +72,13 @@ h1 {
   height: 1.5rem;
 }
 
+/* Headline section */
 .headline-section {
   background-image: url("./images/header-bg-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  padding: 7.1rem 1.5rem 0 1.5rem;
+  padding: var(--section-padding);
 }
 
 .welcome-text {
@@ -104,15 +109,13 @@ h1 {
   height: 1.25rem;
 }
 
-/* Main content */
-/* Works section */
-main {
-  padding: 7.1rem 1.5rem;
-}
+/* ---Main content--- */
 
+/* Works section */
 .works-section {
   display: grid;
   gap: 5.5rem;
+  padding: var(--section-padding);
 }
 
 .project {
@@ -215,6 +218,26 @@ main {
   color: #fff;
   background: #2230d2;
   box-shadow: none;
+}
+
+/* About Myself section */
+.about-me-section {
+  background: var(--white-bg-color);
+  padding: var(--section-padding);
+  border-top-right-radius: var(--section-border-radius);
+}
+
+.about-me-section h2 {
+  color: var(--secondary-headings-color);
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+}
+
+.about-me-paragraph {
+  color: var(--paragraph-color);
+  line-height: var(--paragraph-line-height);
+  font-size: 1rem;
+  margin: var(--basic-spacing) 0;
 }
 
 /* Rules for larger screen sizes */
