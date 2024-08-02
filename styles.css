@@ -87,7 +87,7 @@ h1 {
   margin: var(--basic-spacing) 0;
 }
 
-.lets-connect {
+.lets-connect-text {
   color: var(--lets-connect-text-color);
   line-height: var(--paragraph-line-height);
   font-weight: 500;
@@ -177,6 +177,7 @@ main {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  list-style: none;
 }
 
 .label {
