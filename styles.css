@@ -6,12 +6,18 @@
 
 /* Custom properties */
 :root {
-  --main-heading-color: #6070ff;
+  --main-text-color: #6070ff;
   --secondary-headings-color: #172b4d;
   --paragraph-color: #344563;
+  --paragraph-line-height: 1.5rem;
   --lets-connect-text-color: #7f8cff;
   --basic-spacing: 0.75rem;
   --white-bg-color: #fff;
+  --project-border-color: #dfe1e6;
+  --dot-color: #c1c7d0;
+  --scope-and-year-text-color: #7a869a;
+  --label-bg-color: #ebebff;
+  --see-project-btn-text-color: #396df2;
 }
 
 body {
@@ -47,7 +53,7 @@ body {
 }
 
 h1 {
-  color: var(--main-heading-color);
+  color: var(--main-text-color);
   font-size: 1.1rem;
 }
 
@@ -76,14 +82,14 @@ h1 {
 }
 
 .introduction {
-  line-height: 1.5rem;
+  line-height: var(--paragraph-line-height);
   color: var(--paragraph-color);
   margin: var(--basic-spacing) 0;
 }
 
 .lets-connect {
   color: var(--lets-connect-text-color);
-  line-height: 1.5rem;
+  line-height: var(--paragraph-line-height);
   font-weight: 500;
   margin: var(--basic-spacing) 0;
 }
@@ -101,15 +107,19 @@ h1 {
 /* Main content */
 /* Works section */
 main {
-  padding: 1.5rem;
+  padding: 7.1rem 1.5rem;
 }
 
 .works-section {
   display: grid;
+  gap: 5.5rem;
 }
 
 .project {
   background: var(--white-bg-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--project-border-color);
 }
 
 .project img {
@@ -117,6 +127,93 @@ main {
   height: 13.75rem;
   object-fit: cover;
   border-radius: 0.5rem;
+}
+
+.project-title {
+  color: var(--secondary-headings-color);
+  line-height: 2.75rem;
+  font-size: 2rem;
+  margin: var(--basic-spacing) 0;
+}
+
+.project-info {
+  display: flex;
+  align-items: center;
+  gap: var(--basic-spacing);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.company {
+  color: var(--paragraph-color);
+}
+
+.scope,
+.year {
+  display: flex;
+  align-items: center;
+  color: var(--scope-and-year-text-color);
+}
+
+.scope::before,
+.year::before {
+  content: "";
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--dot-color);
+  margin-right: var(--basic-spacing);
+}
+
+.project-description {
+  line-height: var(--paragraph-line-height);
+  font-size: 0.9rem;
+  margin: var(--basic-spacing) 0;
+  color: var(--paragraph-color);
+}
+
+.stacks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.label {
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  background: var(--label-bg-color);
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 0.75rem;
+  margin-bottom: var(--basic-spacing);
+  letter-spacing: 0.5px;
+}
+
+.see-project {
+  border-radius: 0.5rem;
+  border: 1px solid var(--main-text-color);
+  padding: 0.75rem;
+  background: transparent;
+  cursor: pointer;
+  margin: 0.75rem 0 0.6rem 0;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-size: 1.06rem;
+  color: var(--see-project-btn-text-color);
+  transition: 0.5s;
+}
+
+.see-project:hover {
+  color: #fff;
+  background: var(--main-text-color);
+  box-shadow: 0 0.5rem 1rem #4053fc3d;
+}
+
+.see-project:active {
+  color: #fff;
+  background: #2230d2;
+  box-shadow: none;
 }
 
 /* Rules for larger screen sizes */
