@@ -2,8 +2,8 @@
 
 <!--
 !!! IMPORTANT !!!
-This README is an example of how you could professionally present your codebase. 
-Writing documentation is a crucial part of your work as a professional software developer and cannot be ignored. 
+This README is an example of how you could professionally present your codebase.
+Writing documentation is a crucial part of your work as a professional software developer and cannot be ignored.
 
 You should modify this file to match your project and remove sections that don't apply.
 
@@ -258,9 +258,21 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+- React icon by <a class="link_pro" href="https://freeicons.io/undefined/react-icon-9010" previewlistener="true">icon king1</a> on <a href="https://freeicons.io" previewlistener="true">freeicons.io</a>
 
-I would like to thank...
+- Bootstrap icon by <a class="link_pro" href="https://freeicons.io/undefined/bootstrap-icon-2523" previewlistener="true">icon king1</a> on <a href="https://freeicons.io" previewlistener="true">freeicons.io</a>
+
+- Terminal icon by <a class="link_pro" href="https://freeicons.io/undefined/terminal-icon-17913" previewlistener="true">Anu Rocks</a> on <a href="https://freeicons.io" previewlistener="true">freeicons.io</a>
+
+- Browser icon by <a class="link_pro" href="https://freeicons.io/undefined/google-chrome-google-chrome-seo-browser-google-chrome-icon-icon-52946" previewlistener="true">Reda</a> on <a href="https://freeicons.io" previewlistener="true">freeicons.io</a>
+
+- Robot icon by <a class="link_pro" href="https://freeicons.io/undefined/angle-double-up-padnote-robot-icon-5854" previewlistener="true">Free Preloaders</a> on <a href="https://freeicons.io" previewlistener="true">freeicons.io</a>
+
+- Git icon by <a class="link_pro" href="https://freeicons.io/undefined/git-icon-icon-icon" previewlistener="true">icon king1</a> on <a href="https://freeicons.io" previewlistener="true">freeicons.io</a>
+
+- GitHub icon by <a class="link_pro" href="https://freeicons.io/undefined/github-icon-icon-icon" previewlistener="true">icon king1</a> on <a href="https://freeicons.io" previewlistener="true">freeicons.io</a>
+
+- Figma icon by <a class="link_pro" href="https://freeicons.io/undefined/figma-icon-15629" previewlistener="true">icon king1</a> on <a href="https://freeicons.io" previewlistener="true">freeicons.io</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
