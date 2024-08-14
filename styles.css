@@ -22,6 +22,9 @@
   --section-border-radius: 4.5rem;
   --list-bg-color: #f7f7f9;
   --list-text-color: #253858;
+  --secondary-headings-size: 2.5rem;
+  --input-border-color: #cfd8dc;
+  --placeholder-text-color: #b3bac5;
 }
 
 body {
@@ -86,6 +89,7 @@ h1 {
 .welcome-text {
   font-size: 2.5rem;
   color: var(--secondary-headings-color);
+  text-align: left;
 }
 
 .introduction {
@@ -197,7 +201,8 @@ h1 {
 }
 
 .see-project,
-.get-my-resume {
+.get-my-resume,
+.get-in-touch {
   border-radius: 0.5rem;
   border: 1px solid var(--main-text-color);
   padding: 0.75rem;
@@ -211,13 +216,17 @@ h1 {
   transition: 0.5s;
 }
 
-.see-project:hover {
+.see-project:hover,
+.get-my-resume:hover,
+.get-in-touch:hover {
   color: #fff;
   background: var(--main-text-color);
   box-shadow: 0 0.5rem 1rem #4053fc3d;
 }
 
-.see-project:active {
+.see-project:active,
+.get-in-touch:active,
+.get-my-resume:active {
   color: #fff;
   background: #2230d2;
   box-shadow: none;
@@ -232,7 +241,7 @@ h1 {
 
 .about-me-section h2 {
   color: var(--secondary-headings-color);
-  font-size: 2.5rem;
+  font-size: var(--secondary-headings-size);
   line-height: 3.25rem;
 }
 
@@ -310,6 +319,86 @@ h1 {
   width: 1rem;
   height: 1rem;
   margin-right: var(--basic-spacing);
+}
+
+/* Contact form */
+.contact-section {
+  padding: var(--section-padding);
+  position: relative;
+  background-image: url("./images/contact-bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.contact-section .white-bg {
+  border-radius: none;
+  z-index: -2;
+}
+
+.blue-bg {
+  border-top-left-radius: var(--section-border-radius);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--main-text-color);
+  z-index: -1;
+}
+
+.contact-section h2 {
+  font-size: var(--secondary-headings-size);
+  color: var(--white-bg-color);
+  position: relative;
+  text-align: center;
+}
+
+.contact-description {
+  color: var(--label-bg-color);
+  font-size: 1.25rem;
+  line-height: 1.75;
+  text-align: center;
+  margin: var(--basic-spacing) 0;
+  position: relative;
+  line-height: 1.75rem;
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+input,
+textarea {
+  font-size: 1rem;
+  color: var(--secondary-headings-color);
+  border: 1px solid var(--input-border-color);
+  border-radius: 0.5rem;
+  padding: var(--basic-spacing);
+  font-family: inherit;
+}
+
+input {
+  height: 3rem;
+}
+
+::placeholder {
+  color: var(--placeholder-text-color);
+}
+
+textarea {
+  height: 10.5rem;
+  line-height: 1.5;
+  resize: none;
+}
+
+.get-in-touch {
+  background: var(--white-bg-color);
+  color: var(--main-text-color);
+  width: 8.8rem;
 }
 
 /* Rules for larger screen sizes */
