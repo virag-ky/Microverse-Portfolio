@@ -54,7 +54,7 @@ body {
 
 /* Toolbar/Nav */
 .toolbar {
-  max-width: 1440px;
+  max-width: 1156px;
   height: 3rem;
   display: flex;
   justify-content: space-between;
@@ -149,6 +149,16 @@ h1 {
   border-radius: 1rem;
   padding: 1rem;
   border: 1px solid var(--border-color);
+  width: 100%;
+  max-width: 1156px;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.project:hover {
+  box-shadow: 0 3rem 3rem rgba(37, 47, 137, 0.08);
+  border-color: var(--main-text-color);
 }
 
 .project img {
@@ -461,6 +471,41 @@ textarea {
   .introduction {
     font-size: 1.25rem;
     line-height: 1.75;
+  }
+
+  .project {
+    display: flex;
+    gap: 1.5rem;
+    height: 31rem;
+  }
+
+  .project:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  .project img {
+    height: 100%;
+    width: 50%;
+    border-radius: 0.5rem;
+  }
+
+  .project:last-of-type img {
+    object-fit: contain;
+  }
+
+  .project-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .project-info {
+    margin-top: -1.5rem;
+  }
+
+  .see-project {
+    width: 7.8rem;
   }
 }
 
