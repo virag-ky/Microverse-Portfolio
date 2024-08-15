@@ -276,6 +276,9 @@ If you like this project...
 
 - Figma icon by <a class="link_pro" href="https://freeicons.io/undefined/figma-icon-15629" previewlistener="true">icon king1</a> on <a href="https://freeicons.io" previewlistener="true">freeicons.io</a>
 
+- Sass <a class="link_pro" href="https://freeicons.io/undefined/sass-icon-9036" previewlistener="true">icon king1</a>
+  on <a href="https://freeicons.io" previewlistener="true">freeicons.io</a>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->

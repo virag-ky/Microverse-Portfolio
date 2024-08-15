@@ -336,6 +336,12 @@ h1 {
   border-radius: 50%;
 }
 
+.skills.tools li:nth-of-type(3) img,
+.skills.tools li:nth-of-type(5) img,
+.skills.tools li:nth-of-type(6) img {
+  border-radius: 0;
+}
+
 .soft-skills li p {
   display: flex;
   align-items: center;
@@ -433,10 +439,12 @@ textarea {
 
 /* Rules for larger screen sizes */
 @media (min-width: 768px) {
+  /* ---Header--- */
   .header {
     max-height: 90vh;
   }
 
+  /* Toolbar/Nav */
   .nav-links {
     display: flex;
     align-items: center;
@@ -464,6 +472,7 @@ textarea {
     display: none;
   }
 
+  /* Headline section */
   .welcome-text {
     font-size: 3rem;
   }
@@ -473,6 +482,9 @@ textarea {
     line-height: 1.75;
   }
 
+  /* ---Main content--- */
+
+  /* Works section */
   .project {
     display: flex;
     gap: 1.5rem;
@@ -506,6 +518,39 @@ textarea {
 
   .see-project {
     width: 7.8rem;
+  }
+
+  /* About Myself section */
+  .about-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    max-width: 1156px;
+    margin: 0 auto;
+  }
+
+  .about-content {
+    width: 50%;
+  }
+
+  .skills-content {
+    width: 50%;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--basic-spacing);
+  }
+
+  .skills li {
+    flex-direction: column;
+    height: 7.5rem;
+    min-width: 7.5rem;
+    align-items: flex-start;
+  }
+
+  .skills.soft-skills li {
+    height: auto;
   }
 }
 
