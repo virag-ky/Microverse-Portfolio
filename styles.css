@@ -54,11 +54,13 @@ body {
 
 /* Toolbar/Nav */
 .toolbar {
+  max-width: 1440px;
   height: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1.5rem;
+  margin: 0 auto;
 }
 
 h1 {
@@ -88,6 +90,14 @@ h1 {
   background-size: cover;
   height: 100%;
   padding: var(--section-padding);
+  display: flex;
+  align-items: center;
+}
+
+.headline-content {
+  width: 100%;
+  max-width: 57.5rem;
+  margin: 0 auto;
 }
 
 .welcome-text {
@@ -111,12 +121,18 @@ h1 {
 
 .social-icons {
   display: flex;
+  align-items: center;
   gap: var(--basic-spacing);
 }
 
 .social-icons a img {
   width: 1.25rem;
   height: 1.25rem;
+}
+
+.social-icons a .x {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 /* ---Main content--- */
@@ -407,6 +423,10 @@ textarea {
 
 /* Rules for larger screen sizes */
 @media (min-width: 768px) {
+  .header {
+    max-height: 90vh;
+  }
+
   .nav-links {
     display: flex;
     align-items: center;
@@ -423,9 +443,31 @@ textarea {
     text-decoration: none;
     font-weight: 500;
     font-size: 0.9rem;
+    transition: 0.5s;
+  }
+
+  .nav-links li a:hover {
+    color: var(--main-text-color);
   }
 
   .menu-btn {
     display: none;
+  }
+
+  .welcome-text {
+    font-size: 3rem;
+  }
+
+  .introduction {
+    font-size: 1.25rem;
+    line-height: 1.75;
+  }
+}
+
+@media (min-width: 1000px) {
+  .headline-section {
+    background-image: url("images/header-bg-desktop.svg");
+    background-position: center;
+    background-size: contain;
   }
 }
