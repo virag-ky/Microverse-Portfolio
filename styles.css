@@ -77,6 +77,10 @@ h1 {
   height: 1.5rem;
 }
 
+.nav-links {
+  display: none;
+}
+
 /* Headline section */
 .headline-section {
   background-image: url("./images/header-bg-mobile.svg");
@@ -403,4 +407,25 @@ textarea {
 
 /* Rules for larger screen sizes */
 @media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: var(--basic-spacing);
+    list-style: none;
+  }
+
+  .nav-links li {
+    padding: 0.6rem 0.75rem;
+  }
+
+  .nav-links li a {
+    color: var(--paragraph-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  .menu-btn {
+    display: none;
+  }
 }
