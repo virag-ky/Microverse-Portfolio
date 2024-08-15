@@ -552,6 +552,32 @@ textarea {
   .skills.soft-skills li {
     height: auto;
   }
+
+  /* Contact form */
+  .contact-section {
+    background-image: url("images/contact-bg-desktop.svg");
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+
+  .contact-section h2 {
+    line-height: 3.25;
+  }
+
+  .contact-description {
+    max-width: 35.5rem;
+    margin: 0 auto;
+    line-height: 1.75;
+  }
+
+  form {
+    max-width: 28rem;
+    margin: 2rem auto 0 auto;
+  }
+
+  .get-in-touch {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1000px) {
