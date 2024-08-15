@@ -258,6 +258,8 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+- <a target="_blank" href="https://icons8.com/icon/YfCbGWCWcuar/twitterx">Twitter</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
 - React icon by <a class="link_pro" href="https://freeicons.io/undefined/react-icon-9010" previewlistener="true">icon king1</a> on <a href="https://freeicons.io" previewlistener="true">freeicons.io</a>
 
 - Bootstrap icon by <a class="link_pro" href="https://freeicons.io/undefined/bootstrap-icon-2523" previewlistener="true">icon king1</a> on <a href="https://freeicons.io" previewlistener="true">freeicons.io</a>
@@ -273,6 +275,9 @@ If you like this project...
 - GitHub icon by <a class="link_pro" href="https://freeicons.io/undefined/github-icon-icon-icon" previewlistener="true">icon king1</a> on <a href="https://freeicons.io" previewlistener="true">freeicons.io</a>
 
 - Figma icon by <a class="link_pro" href="https://freeicons.io/undefined/figma-icon-15629" previewlistener="true">icon king1</a> on <a href="https://freeicons.io" previewlistener="true">freeicons.io</a>
+
+- Sass <a class="link_pro" href="https://freeicons.io/undefined/sass-icon-9036" previewlistener="true">icon king1</a>
+  on <a href="https://freeicons.io" previewlistener="true">freeicons.io</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
