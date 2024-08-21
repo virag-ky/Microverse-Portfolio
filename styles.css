@@ -66,6 +66,13 @@ body {
 h1 {
   color: var(--main-text-color);
   font-size: 1.1rem;
+  animation: 3s rotate-logo;
+}
+
+@keyframes rotate-logo {
+  from {
+    transform: rotate(360deg);
+  }
 }
 
 .menu-btn {
@@ -159,6 +166,7 @@ h1 {
 .project:hover {
   box-shadow: 0 3rem 3rem rgba(37, 47, 137, 0.08);
   border-color: var(--main-text-color);
+  transform: scale(1.02);
 }
 
 .project img {
@@ -397,6 +405,11 @@ h1 {
   margin: var(--basic-spacing) 0;
   position: relative;
   line-height: 1.75rem;
+  transition: 0.5s;
+}
+
+.contact-description:hover {
+  transform: translate(5%);
 }
 
 form {
@@ -435,6 +448,10 @@ textarea {
   background: var(--white-bg-color);
   color: var(--main-text-color);
   width: 8.8rem;
+}
+
+.get-in-touch:hover {
+  border: 1px solid #fff;
 }
 
 /* Rules for larger screen sizes */
