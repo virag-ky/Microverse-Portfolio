@@ -405,6 +405,11 @@ h1 {
   margin: var(--basic-spacing) 0;
   position: relative;
   line-height: 1.75rem;
+  transition: 0.5s;
+}
+
+.contact-description:hover {
+  transform: translate(5%);
 }
 
 form {
@@ -443,6 +448,10 @@ textarea {
   background: var(--white-bg-color);
   color: var(--main-text-color);
   width: 8.8rem;
+}
+
+.get-in-touch:hover {
+  border: 1px solid #fff;
 }
 
 /* Rules for larger screen sizes */
