@@ -166,6 +166,7 @@ h1 {
 .project:hover {
   box-shadow: 0 3rem 3rem rgba(37, 47, 137, 0.08);
   border-color: var(--main-text-color);
+  transform: scale(1.02);
 }
 
 .project img {
