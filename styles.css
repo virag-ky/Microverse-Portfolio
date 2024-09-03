@@ -6,16 +6,15 @@
 
 /* Custom properties */
 :root {
-  --main-text-color: #6070ff;
+  --main-text-color: #1a30ff;
   --secondary-headings-color: #172b4d;
   --paragraph-color: #344563;
   --paragraph-line-height: 1.5rem;
-  --lets-connect-text-color: #7f8cff;
   --basic-spacing: 0.75rem;
   --white-bg-color: #fff;
   --border-color: #dfe1e6;
   --dot-color: #c1c7d0;
-  --scope-and-year-text-color: #7a869a;
+  --scope-and-year-text-color: #4f5969;
   --label-bg-color: #ebebff;
   --see-project-btn-text-color: #396df2;
   --section-padding: 7.1rem 1.5rem;
@@ -120,7 +119,7 @@ h1 {
 }
 
 .lets-connect-text {
-  color: var(--lets-connect-text-color);
+  color: var(--main-text-color);
   line-height: var(--paragraph-line-height);
   font-weight: 500;
   margin: var(--basic-spacing) 0;
@@ -394,7 +393,9 @@ h1 {
   font-size: var(--secondary-headings-size);
   color: var(--white-bg-color);
   position: relative;
-  text-align: center;
+  background: var(--main-text-color);
+  width: max-content;
+  margin: 0 auto;
 }
 
 .contact-description {
@@ -406,6 +407,7 @@ h1 {
   position: relative;
   line-height: 1.75rem;
   transition: 0.5s;
+  background: var(--main-text-color);
 }
 
 .contact-description:hover {
