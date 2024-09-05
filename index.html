@@ -25,7 +25,7 @@
         <button class="menu-btn" aria-label="Open menu">
           <img src="icons/menu.svg" alt="menu icon" />
         </button>
-        <ul class="nav-links">
+        <ul class="desktop-menu">
           <li>
             <a href="#portfolio">Portfolio</a>
           </li>
@@ -37,6 +37,22 @@
           </li>
         </ul>
       </nav>
+      <div class="mobile-menu-section">
+        <ul class="mobile-menu close-menu">
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button class="close-menu-btn" aria-label="Close menu">
+          <img src="icons/close-icon.svg" alt="close icon" />
+        </button>
+      </div>
       <section class="headline-section">
         <div class="headline-content">
           <h2 class="welcome-text">
@@ -251,9 +267,6 @@
             </div>
             <ul class="skills frameworks">
               <li><img src="icons/react.svg" alt="React icon" />React</li>
-              <li>
-                <img src="icons/bootstrap.svg" alt="Bootstrap icon" />Bootstrap
-              </li>
             </ul>
             <div class="dropdown-list">
               <h3>Tools</h3>
@@ -339,5 +352,6 @@
         </form>
       </section>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
