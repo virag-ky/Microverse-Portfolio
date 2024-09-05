@@ -31,8 +31,8 @@ mobileMenuItems.forEach((link) => {
 const handleResize = () => {
   const breakpoint = 768;
 
-  if (mobileMenu.classList.contains("open-menu")) {
-    closeMenu();
+  if (window.innerWidth > breakpoint) {
+    if (mobileMenu.classList.contains("open-menu")) closeMenu();
   }
 };
 

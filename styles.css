@@ -112,11 +112,12 @@ h1 {
   gap: var(--basic-spacing);
   position: absolute;
   top: 0;
-  background-color: #3b4fffc6;
+  background-color: rgba(43, 64, 255, 0.8);
   width: 100vw;
   height: 100vh;
   padding: var(--section-padding);
   backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
 }
 
 .open-menu li {
