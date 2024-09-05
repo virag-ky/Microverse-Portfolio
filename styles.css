@@ -85,8 +85,50 @@ h1 {
   height: 1.5rem;
 }
 
-.nav-links {
+/* Mobile menu */
+.close-menu,
+.desktop-menu,
+.close-menu-btn {
   display: none;
+}
+
+.show-close-menu-btn {
+  position: absolute;
+  top: 6rem;
+  right: 3rem;
+  display: block;
+  border: none;
+  background: transparent;
+}
+
+.show-close-menu-btn img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.open-menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--basic-spacing);
+  position: absolute;
+  top: 0;
+  background-color: #3b4fffc6;
+  width: 100vw;
+  height: 100vh;
+  padding: var(--section-padding);
+  backdrop-filter: blur(0.5rem);
+}
+
+.open-menu li {
+  list-style: none;
+  width: max-content;
+}
+
+.open-menu li a {
+  color: var(--white-bg-color);
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* Headline section */
@@ -464,18 +506,18 @@ textarea {
   }
 
   /* Toolbar/Nav */
-  .nav-links {
+  .desktop-menu {
     display: flex;
     align-items: center;
     gap: var(--basic-spacing);
     list-style: none;
   }
 
-  .nav-links li {
+  .desktop-menu li {
     padding: 0.6rem 0.75rem;
   }
 
-  .nav-links li a {
+  .desktop-menu li a {
     color: var(--paragraph-color);
     text-decoration: none;
     font-weight: 500;
@@ -483,7 +525,7 @@ textarea {
     transition: 0.5s;
   }
 
-  .nav-links li a:hover {
+  .desktop-menu li a:hover {
     color: var(--main-text-color);
   }
 
