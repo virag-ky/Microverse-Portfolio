@@ -6,7 +6,7 @@
 
 /* Custom properties */
 :root {
-  --main-text-color: #1a30ff;
+  --main-text-color: #4f60ff;
   --secondary-headings-color: #172b4d;
   --paragraph-color: #344563;
   --paragraph-line-height: 1.5rem;
@@ -14,7 +14,7 @@
   --white-bg-color: #fff;
   --border-color: #dfe1e6;
   --dot-color: #c1c7d0;
-  --scope-and-year-text-color: #4f5969;
+  --scope-and-year-text-color: #687890;
   --label-bg-color: #ebebff;
   --see-project-btn-text-color: #396df2;
   --section-padding: 7.1rem 1.5rem;
@@ -81,8 +81,8 @@ h1 {
 
 .menu-btn img {
   cursor: pointer;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 /* Mobile menu */
@@ -99,6 +99,7 @@ h1 {
   display: block;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 .show-close-menu-btn img {
