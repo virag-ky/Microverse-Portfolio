@@ -1,8 +1,11 @@
+import projects from "./projects.js";
+
 const openMenuBtn = document.querySelector(".menu-btn");
 const closeMenuBtn = document.querySelector(".close-menu-btn");
 const desktopMenu = document.querySelector(".desktop-menu");
 const mobileMenu = document.querySelector(".mobile-menu");
 const mobileMenuItems = mobileMenu.querySelectorAll("li");
+const worksSection = document.querySelector(".works-section");
 
 // Handle menu - open
 const openMenu = () => {
@@ -37,3 +40,38 @@ const handleResize = () => {
 };
 
 window.addEventListener("resize", handleResize);
+
+// Generate projects
+const createProjects = (projectsArray) => {
+  for (const project of projectsArray) {
+    const articleEl = document.createElement("article");
+    articleEl.classList.add("project");
+    articleEl.innerHTML = `<img
+            src="images/projects/${project.image}"
+            alt=${project.altText}
+          />
+          <div class="project-content">
+            <h2 class="project-title">${project.name}</h2>
+            <div class="project-info">
+              <p class="company">${project.company}</p>
+              <p class="scope">${project.scope}</p>
+              <p class="year">${project.year}</p>
+            </div>
+            <p class="project-description">
+             ${project.description}
+            </p>
+            <ul class="stacks">
+              <li class="label">${project.technologies[0]}</li>
+              <li class="label">${project.technologies[1]}</li>
+              <li class="label">${project.technologies[2]}</li>
+            </ul>
+            <button class="see-project" aria-label="See project">
+              See project
+            </button>
+          </div>`;
+
+    worksSection.appendChild(articleEl);
+  }
+};
+
+createProjects(projects);
