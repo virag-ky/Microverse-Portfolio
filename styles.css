@@ -257,6 +257,11 @@ hr {
   gap: var(--basic-spacing);
 }
 
+.buttons-container a {
+  width: 100%;
+  text-decoration: none;
+}
+
 .buttons-container button {
   display: flex;
   align-items: center;

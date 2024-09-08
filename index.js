@@ -45,6 +45,8 @@ const createProjects = (projectsArray1) => {
 createProjects(projects);
 
 // Generate project popup cards
+let closeBtnId = 0;
+
 const createProjectPopupCards = (projectsArray2) => {
   for (const project of projectsArray2) {
     const projectContainerPopup = document.createElement("div");
@@ -54,7 +56,7 @@ const createProjectPopupCards = (projectsArray2) => {
     <article class="project-popup">
           <div class="project-content">
             <h2 class="project-title">${project.name}</h2>
-            <button class="close-popup-btn">
+            <button id="close-${closeBtnId}" class="close-popup-btn">
             <img src="./icons/close-popup.svg" alt="close icon">
             </button>
             <div class="project-info">
@@ -76,17 +78,21 @@ const createProjectPopupCards = (projectsArray2) => {
             </ul>
             <hr>
             <div class="buttons-container">
+            <a href=${project.liveLink} target="_blank">
               <button class="see-project" aria-label="See live">
                 See live
                 <img src="./icons/see-live.svg" alt="see live arrow icon">
               </button>
+            </a>
+            <a href=${project.sourceCode} target="_blank">
               <button class="see-project" aria-label="See source">
                 See source
                 <img src="./icons/see-source.svg" alt="GitHub icon">
               </button>
+            </a>
             </div>
           </div></article>`;
-
+    closeBtnId++;
     document.body.appendChild(projectContainerPopup);
   }
 };
@@ -105,6 +111,15 @@ seeProjectBtns.forEach((btn) => {
 });
 
 // Close project popup
+const closePopupBtns = [...document.querySelectorAll(".close-popup-btn")];
+
+closePopupBtns.forEach((closeBtn) => {
+  closeBtn.addEventListener("click", () => {
+    const idOfCloseBtn = closeBtn.id.charAt(closeBtn.id.length - 1);
+    projectPopups[idOfCloseBtn].style.display = "none";
+    document.body.style.position = "static";
+  });
+});
 
 // Handle menu - open
 const openMenu = () => {
