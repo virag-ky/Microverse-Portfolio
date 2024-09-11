@@ -100,7 +100,7 @@ const createProjectPopupCards = (projectsArray2) => {
 createProjectPopupCards(projects);
 
 // Open project popup
-const seeProjectBtns = [...document.querySelectorAll(".see-project")];
+const seeProjectBtns = document.querySelectorAll(".see-project");
 const projectPopups = [...document.querySelectorAll(".project-container")];
 
 seeProjectBtns.forEach((btn) => {
@@ -162,7 +162,7 @@ window.addEventListener("resize", handleResizeForMenu);
 
 // Handle dropdown lists
 const skillsList = [...document.querySelectorAll(".skills")];
-const chevronBtns = document.querySelectorAll(".chevron img");
+const chevronBtns = document.querySelectorAll(".chevron");
 
 chevronBtns.forEach((arrow) => {
   arrow.addEventListener("click", () => {

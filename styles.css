@@ -445,7 +445,7 @@ hr {
   cursor: pointer;
 }
 
-.toggleChevron {
+.toggleChevron img {
   transform: rotate(90deg);
 }
 
