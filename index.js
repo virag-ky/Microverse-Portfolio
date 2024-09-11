@@ -32,7 +32,7 @@ const createProjects = (projectsArray1) => {
               <li class="label">${project.technologies[1]}</li>
               <li class="label">${project.technologies[2]}</li>
             </ul>
-            <button id=${btnId} class="see-project" aria-label="See project">
+            <button id=${btnId} onclick="" class="see-project" aria-label="See project">
               See project
             </button>
           </div>`;
