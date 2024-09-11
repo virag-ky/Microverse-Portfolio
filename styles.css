@@ -445,8 +445,17 @@ hr {
   cursor: pointer;
 }
 
+.toggleChevron {
+  transform: rotate(90deg);
+}
+
 .skills {
   padding: 0.75rem;
+  display: none;
+}
+
+.toggleSkills {
+  display: block;
 }
 
 .skills li {
@@ -696,16 +705,19 @@ textarea {
   }
 
   .skills {
-    display: flex;
     flex-wrap: wrap;
     gap: var(--basic-spacing);
+  }
+
+  .toggleSkills {
+    display: flex;
   }
 
   .skills li {
     flex-direction: column;
     height: 7.5rem;
     min-width: 7.5rem;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .skills.soft-skills li {

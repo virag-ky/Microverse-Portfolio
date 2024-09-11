@@ -159,3 +159,14 @@ const handleResizeForMenu = () => {
 };
 
 window.addEventListener("resize", handleResizeForMenu);
+
+// Handle dropdown lists
+const skillsList = [...document.querySelectorAll(".skills")];
+const chevronBtns = [...document.querySelectorAll(".chevron img")];
+
+chevronBtns.forEach((arrow) => {
+  arrow.addEventListener("click", () => {
+    skillsList[chevronBtns.indexOf(arrow)].classList.toggle("toggleSkills");
+    arrow.classList.toggle("toggleChevron");
+  });
+});
