@@ -45,62 +45,62 @@ let btnId = 0;
 // createProjects(projects);
 
 // Generate project popup cards
-let closeBtnId = 0;
+//let closeBtnId = 0;
 
-const createProjectPopupCards = (projectsArray2) => {
-  for (const project of projectsArray2) {
-    const projectContainerPopup = document.createElement("div");
+// const createProjectPopupCards = (projectsArray2) => {
+//   for (const project of projectsArray2) {
+//     const projectContainerPopup = document.createElement("div");
 
-    projectContainerPopup.classList.add("project-container");
-    projectContainerPopup.innerHTML = `
-    <article class="project-popup">
-          <div class="project-content">
-            <h2 class="project-title">${project.name}</h2>
-            <button id="close-${closeBtnId}" class="close-popup-btn">
-            <img src="./icons/close-popup.svg" alt="close icon">
-            </button>
-            <div class="project-info">
-              <p class="company">${project.company}</p>
-              <p class="scope">${project.scope}</p>
-              <p class="year">${project.year}</p>
-            </div>
-          <img
-            src="images/projects/${project.image}"
-            alt=${project.altText}
-          />
-            <p class="project-description">
-             ${project.details}
-            </p>
-            <ul class="stacks">
-              <li class="label">${project.technologies[0]}</li>
-              <li class="label">${project.technologies[1]}</li>
-              <li class="label">${project.technologies[2]}</li>
-            </ul>
-            <hr>
-            <div class="buttons-container">
-            <a href=${project.liveLink} target="_blank">
-              <button class="see-project" aria-label="See live">
-                See live
-                <img src="./icons/see-live.svg" alt="see live arrow icon">
-              </button>
-            </a>
-            <a href=${project.sourceCode} target="_blank">
-              <button class="see-project" aria-label="See source">
-                See source
-                <img src="./icons/see-source.svg" alt="GitHub icon">
-              </button>
-            </a>
-            </div>
-          </div></article>`;
-    closeBtnId++;
-    document.body.appendChild(projectContainerPopup);
-  }
-};
+//     projectContainerPopup.classList.add("project-container");
+//     projectContainerPopup.innerHTML = `
+//     <article class="project-popup">
+//           <div class="project-content">
+//             <h2 class="project-title">${project.name}</h2>
+//             <button id="close-${closeBtnId}" class="close-popup-btn">
+//             <img src="./icons/close-popup.svg" alt="close icon">
+//             </button>
+//             <div class="project-info">
+//               <p class="company">${project.company}</p>
+//               <p class="scope">${project.scope}</p>
+//               <p class="year">${project.year}</p>
+//             </div>
+//           <img
+//             src="images/projects/${project.image}"
+//             alt=${project.altText}
+//           />
+//             <p class="project-description">
+//              ${project.details}
+//             </p>
+//             <ul class="stacks">
+//               <li class="label">${project.technologies[0]}</li>
+//               <li class="label">${project.technologies[1]}</li>
+//               <li class="label">${project.technologies[2]}</li>
+//             </ul>
+//             <hr>
+//             <div class="buttons-container">
+//             <a href=${project.liveLink} target="_blank">
+//               <button class="see-project" aria-label="See live">
+//                 See live
+//                 <img src="./icons/see-live.svg" alt="see live arrow icon">
+//               </button>
+//             </a>
+//             <a href=${project.sourceCode} target="_blank">
+//               <button class="see-project" aria-label="See source">
+//                 See source
+//                 <img src="./icons/see-source.svg" alt="GitHub icon">
+//               </button>
+//             </a>
+//             </div>
+//           </div></article>`;
+//     closeBtnId++;
+//     document.body.appendChild(projectContainerPopup);
+//   }
+// };
 
-createProjectPopupCards(projects);
+// createProjectPopupCards(projects);
 
 // Open project popup
-const seeProjectBtns = document.querySelectorAll(".project .see-project");
+const seeProjectBtns = document.querySelectorAll(".see-project");
 const projectPopups = [...document.querySelectorAll(".project-container")];
 
 seeProjectBtns.forEach((btn) => {
