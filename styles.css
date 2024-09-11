@@ -417,10 +417,6 @@ hr {
   margin: var(--basic-spacing) 0;
 }
 
-.get-my-resume {
-  margin-bottom: 2rem;
-}
-
 .dropdown-list {
   margin: var(--basic-spacing);
   border-bottom: 1px solid var(--border-color);
@@ -428,6 +424,10 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: var(--basic-spacing);
+}
+
+.dropdown-list:first-of-type {
+  margin-top: 3rem;
 }
 
 .dropdown-list h3 {
