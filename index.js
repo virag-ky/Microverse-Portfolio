@@ -108,6 +108,11 @@ seeProjectBtns.forEach((btn) => {
     projectPopups[btn.id].style.display = "block";
     document.body.style.position = "fixed";
   });
+
+  btn.addEventListener("touchstart", () => {
+    projectPopups[btn.id].style.display = "block";
+    document.body.style.position = "fixed";
+  });
 });
 
 // Close project popup
