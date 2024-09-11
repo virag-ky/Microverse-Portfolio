@@ -49,6 +49,7 @@
             <a href="#contact">Contact</a>
           </li>
         </ul>
+
         <button class="close-menu-btn" aria-label="Close menu">
           <img src="icons/close-icon.svg" alt="close icon" />
         </button>
@@ -104,7 +105,12 @@
               <li class="label">CSS</li>
               <li class="label">JavaScript</li>
             </ul>
-            <button id="0" class="see-project" aria-label="See project">
+            <button
+              onclick="openProject1()"
+              id="0"
+              class="see-project"
+              aria-label="See project"
+            >
               See project
             </button>
           </div>
@@ -181,7 +187,7 @@
             </button>
           </div>
         </article>
-        <div class="project-container">
+        <div class="project-container" id="container-1">
           <article class="project-popup">
             <div class="project-content">
               <h2 class="project-title">Restaurant UI Kit</h2>
@@ -532,5 +538,11 @@
       </section>
     </main>
     <script src="index.js" type="module"></script>
+    <script>
+      function openProject1() {
+        document.getElementById("container-1").style.display = "block";
+        document.body.style.position = "fixed";
+      }
+    </script>
   </body>
 </html>

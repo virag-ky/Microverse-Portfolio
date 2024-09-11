@@ -275,15 +275,15 @@ let btnId = 0;
 // createProjectPopupCards(projects);
 
 // Open project popup
-const seeProjectBtns = document.querySelectorAll(".see-project");
+//const seeProjectBtns = document.querySelectorAll(".see-project");
 const projectPopups = [...document.querySelectorAll(".project-container")];
 
-seeProjectBtns.forEach((btn) => {
-  btn.addEventListener("click", function () {
-    projectPopups[btn.id].style.display = "block";
-    document.body.style.position = "fixed";
-  });
-});
+// seeProjectBtns.forEach((btn) => {
+//   btn.addEventListener("click", function () {
+//     projectPopups[btn.id].style.display = "block";
+//     document.body.style.position = "fixed";
+//   });
+// });
 
 // Close project popup
 const closePopupBtns = [...document.querySelectorAll(".close-popup-btn")];
