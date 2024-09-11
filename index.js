@@ -9,40 +9,40 @@ const worksSection = document.querySelector(".works-section");
 
 // Generate projects
 let btnId = 0;
-const createProjects = (projectsArray1) => {
-  for (const project of projectsArray1) {
-    const articleEl = document.createElement("article");
-    articleEl.classList.add("project");
-    articleEl.innerHTML = `<img
-            src="images/projects/${project.image}"
-            alt=${project.altText}
-          />
-          <div class="project-content">
-            <h2 class="project-title">${project.name}</h2>
-            <div class="project-info">
-              <p class="company">${project.company}</p>
-              <p class="scope">${project.scope}</p>
-              <p class="year">${project.year}</p>
-            </div>
-            <p class="project-description">
-             ${project.description}
-            </p>
-            <ul class="stacks">
-              <li class="label">${project.technologies[0]}</li>
-              <li class="label">${project.technologies[1]}</li>
-              <li class="label">${project.technologies[2]}</li>
-            </ul>
-            <button id=${btnId} onclick="" class="see-project" aria-label="See project">
-              See project
-            </button>
-          </div>`;
+// const createProjects = (projectsArray1) => {
+//   for (const project of projectsArray1) {
+//     const articleEl = document.createElement("article");
+//     articleEl.classList.add("project");
+//     articleEl.innerHTML = `<img
+//             src="images/projects/${project.image}"
+//             alt=${project.altText}
+//           />
+//           <div class="project-content">
+//             <h2 class="project-title">${project.name}</h2>
+//             <div class="project-info">
+//               <p class="company">${project.company}</p>
+//               <p class="scope">${project.scope}</p>
+//               <p class="year">${project.year}</p>
+//             </div>
+//             <p class="project-description">
+//              ${project.description}
+//             </p>
+//             <ul class="stacks">
+//               <li class="label">${project.technologies[0]}</li>
+//               <li class="label">${project.technologies[1]}</li>
+//               <li class="label">${project.technologies[2]}</li>
+//             </ul>
+//             <button id=${btnId} onclick="" class="see-project" aria-label="See project">
+//               See project
+//             </button>
+//           </div>`;
 
-    btnId++;
-    worksSection.appendChild(articleEl);
-  }
-};
+//     btnId++;
+//     worksSection.appendChild(articleEl);
+//   }
+// };
 
-createProjects(projects);
+// createProjects(projects);
 
 // Generate project popup cards
 let closeBtnId = 0;
