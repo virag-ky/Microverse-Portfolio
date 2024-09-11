@@ -100,16 +100,11 @@ const createProjectPopupCards = (projectsArray2) => {
 createProjectPopupCards(projects);
 
 // Open project popup
-const seeProjectBtns = document.querySelectorAll(".see-project");
+const seeProjectBtns = document.querySelectorAll(".project .see-project");
 const projectPopups = [...document.querySelectorAll(".project-container")];
 
 seeProjectBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    projectPopups[btn.id].style.display = "block";
-    document.body.style.position = "fixed";
-  });
-
-  btn.addEventListener("touchstart", () => {
     projectPopups[btn.id].style.display = "block";
     document.body.style.position = "fixed";
   });
