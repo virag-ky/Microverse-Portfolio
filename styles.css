@@ -220,10 +220,12 @@ h1 {
   backdrop-filter: blur(0.5rem);
   -webkit-backdrop-filter: blur(0.5rem);
   padding: var(--section-padding);
+  overflow-y: scroll;
 }
 
 .project-popup {
   width: 100%;
+  cursor: auto;
 }
 
 .project:hover {
@@ -276,6 +278,10 @@ hr {
   height: auto;
   border-radius: 0;
   margin-top: 0;
+}
+
+.buttons-container button:hover img {
+  visibility: hidden;
 }
 
 .close-popup-btn {
@@ -528,12 +534,7 @@ hr {
   margin: var(--basic-spacing) 0;
   position: relative;
   line-height: 1.75rem;
-  transition: 0.5s;
   background: var(--main-text-color);
-}
-
-.contact-description:hover {
-  transform: translate(5%);
 }
 
 form {
@@ -644,6 +645,23 @@ textarea {
 
   .project:last-of-type img {
     object-fit: contain;
+  }
+
+  .project-popup img {
+    height: 300px;
+    object-fit: contain;
+  }
+
+  .close-popup-btn img {
+    height: unset;
+  }
+
+  .buttons-container {
+    justify-content: flex-start;
+  }
+
+  .buttons-container a {
+    width: 150px;
   }
 
   .project-content {
